@@ -1,0 +1,5 @@
+Question: 
+
+Why aren't the lags' values lining up? (ie, after accounting for the shift by 1)
+
+More importantly - start to generate a legit first draft of your blog

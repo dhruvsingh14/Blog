@@ -1,0 +1,36 @@
+Overarching question for multiple instruments: query multiple then select subset? or query single, then combine multiple?
+
+1. Ensure that the data pull is configured to bring in various asset classes, 
+and multiple-assets at a given time. Perhaps as a list. 
+
+2. Such that the data frame names the raw closing prices according to the instrument name.
+
+3. Then have a way to index by instrument. 
+
+-- Or alternatively put it to chat. Ask if this is the best way. Or if the best way is to bring in 
+one instrument at a time, then stitch them together if need be. 
+
+My hunch is to bring in multiple on the front end to prevent merging errors. Then manipulate as needed. 
+
+4. (Trivial) See if there's a way to still label your plots using the instrument name, ie, by taking in a string. 
+
+---------------------------------------------------------------------------------------
+
+Other question to ask - whether session should be disconnected after data pull or be kept running.
+
+---------------------------------------------------------------------------------------
+
+Concern to resolve: IBKR error: can't pull more than 365 days worth of daily bars? or duration needs to be specified in years, I believe.
+
+---------------------------------------------------------------------------------------
+
+Update: Contrader class to include the new dataframe pull method. 
+
+---------------------------------------------------------------------------------------
+
+Can the data pull be done using a function?
+
+---------------------------------------------------------------------------------------
+
+Next: continue pasting in other strategies. And cleaning them till they're ready to go. 
+
